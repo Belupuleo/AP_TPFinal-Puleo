@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <style>
+    .todoelcuerpo {
+    background-image: url("imagenes/galaxia3.jpg");
+ 
+    }
+    </style>
+    <link rel="icon" href="imagenes/icono.jpg">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <title>AstroWorld</title>
+</head>
+
+
+  <body>
+    <header class="header">
+        <div id="menufijo">
+            <div class="inicio">
+                <a class="btn botonmenu botoninicioo" href="index.html">
+                    <img class="botoninicio" src="imagenes/astro2-removebg-preview (2).png">
+                </a>   
+            </div>
+            <nav class="social">
+                <ul class="social-network social-circle">
+                        <a style="color: white;" href="formularioInicia.html" class="btn botonmenu">Iniciar Sesión</a>
+                        <a style="color: white;" href="https://www.facebook.com/belu.puleo"><i class="fa fa-lg fa-facebook icono botonmenu"></i></a>
+                        <a style="color: white;" href="https://twitter.com/BelPuleo"><i class="fa fa-lg fa-twitter icono botonmenu"></i></a>
+                        <a style="color: white;" href="https://www.linkedin.com/in/bel%C3%A9n-puleo-10207311b/"><i class="fa fa-lg fa-linkedin icono botonmenu"></i></a>
+                        <a style="color: white;" href="https://www.instagram.com/bel.puleo/"><i class="fa fa-lg fa-instagram icono botonmenu"></i></a>
+
+                </ul>
+            </nav>
+            <div class="titulos2">Introducción a la astrología</div>            
+        </div>
+
+    </header>
+    
+    <div class="todoelcuerpo">
+
+        <div class="grillablog">
+            <div class="grilla-principal">
+                <div class="recuadro">
+                  <h2 class="titulos">¿Qué es la ASTROLOGÍA?</h2>
+                  <p class="texto-comun">
+                      La astrología es el estudio de la posición y los movimientos de los astros y su influencia en las personas y los acontecimientos del mundo. La palabra, como tal, proviene del griego ἀστρολογία (astrología), que significa estudio o ciencia que trata de los astros.
+                      <br><br>
+                      <img class="imagen-1" src="Imagenes/Astro.jpg">
+                      Herramienta de autodescubrimiento - autonoconocimiento. Como es afuera es adentro. <br>
+                      Es una herramienta milenaria que podemos utilizar para conocernos y comprendernos en profundidad. Nos permite equilibrar y potenciar nuetra personalidad, teniendo en cuenta las energías que tenemos más disponibles y aquellas que quedan ocultas porque nos resultan "incomodas".
+                      <br><br>
+                      Para conseguir observar la personalidad y características detalladas de cada signo y cada persona se debe hacer una revisión a la carta natal o astral, que básicamente es el mapa del cielo del momento exacto en el que nació cada persona.
+                      Con ella se conoce la posición del Sol, la Luna, los planetas y el punto que marca el signo ascendente. Obtendremos un conjunto de cualidades energéticas que la persona posee. 
+                      <br><br>
+                      Aclaremos de antemano, que no son predicciones las que podemos realizar con la astrología, 
+                      sino hipótesis de cómo podría manifestarse la energía que estamos observando.
+                      <br><br>
+                      La carta natal se presenta a través de un mandala (círculo mágico).
+                      Para calcular nuestra carta natal necesitamos: Fecha, hora (lo más precisa posible) y lugar de nacimiento.
+                      <br><br>
+                    </p>
+                <div class="contenedorcalculo">
+                    <h2 class="titulos">Calcula tu SOL</h2>
+                    <form action="">
+                        <div class="contenedorform">
+                            
+                            <p class="texto-comun">
+                                Día de nacimiento: <input type="number" name=dia id="c-dia" minlength="8" maxlength="20" required=""><br>
+                                <br>
+                                Número de mes de nacimiento: <input type="number" name=mes id="c-mes" minlength="8" maxlength="20" required=""><br>
+                                <br>
+                                <button type="button" onclick=calculasol() class="btn botonmenu">Calcular</button>
+                            </p>
+                        </div>    
+                        <div id="lugarCalculo"></div>
+                                   
+                    </form>
+                </div>
+                    <div class="espacio2"></div>
+                    <p class="texto-comun">    
+                      <strong>Podemos calcular nuestra carta natal completa en múltiples páginas web. Nosotros recomendamos:
+                      </strong>
+                      <br>
+                      <a href="https://www.losarcanos.com/carta-astral-2.php">Los Arcanos</a>
+                      <br>
+                      <a href="https://aprendeastrologia.com/carta-natal/">Aprende Astrología</a>
+                      <br><br>
+                    </p>
+                    <iframe class="video" src="https://www.youtube.com/embed/2ykgVcMHz14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </div>
+
+            </div>
+
+            <div class="grilla-secundario">
+                <h2 class="titulo2">
+                    También podría interesarte:
+                </h2>
+                <a class="linkpagina" href="Planetas.html">
+                    <figure>
+                            <img class="botonimagen" src="Imagenes/planetas1.webp">
+                            <div class="capaboton">
+                            </div>
+                            <div class="capaboton2">
+                            <h3 class="titulo5">Significado de los</h3>
+                            <h3 class="titulo6">PLANETAS</h3>
+                            </div>    
+                    </figure>
+                </a>
+                <a class="linkpagina" href="Elementos.html">
+                    <figure>
+                            <img class="botonimagen" src="Imagenes/ele.jpg">
+                            <div class="capaboton">
+                            </div>
+                            <div class="capaboton2">
+                            <h3 class="titulo5">Los cuatro</h3>
+                            <h3 class="titulo6">ELEMENTOS</h3>
+                            </div>    
+                    </figure>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <footer class="foot">
+        <div class="legales">
+            <p class="copyr">
+                Copyright © 2022 
+                AstroWorld
+                S.A.
+                <br>
+                TODOS LOS DERECHOS RESERVADOS.
+                <br>
+            </p>
+            <p class="contacto">
+                Información de contacto: <br>
+                | Belén Puleo
+                | Email: 
+                <a href = "mailto: beluu.puleo@gmail.com">beluu.puleo@gmail.com</a>
+                <br>
+                | Tel:
+                <a href = "tel:3364375800">+54 336 4375800</a>
+
+            </p>
+        </div>
+    </footer>
+
+    <script src="JavaScript/js.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
